@@ -21,6 +21,11 @@
 <text x="634.9" y="477.9" fill="#22d3ee" font-size="10.5" font-weight="600" text-anchor="middle">SCL·D3</text>
 <text x="685.8" y="477.9" fill="#22d3ee" font-size="10.5" font-weight="600" text-anchor="middle">RDY·D4</text>
 <text x="736.6" y="477.9" fill="#22d3ee" font-size="10.5" font-weight="600" text-anchor="middle">RST·D5</text>
+<rect x="577.1" y="546.4" width="158.4" height="71.6" rx="8" fill="#1a1d27" stroke="#f472b6" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="583.1" y="552.4" width="146.4" height="59.6" rx="4" fill="#c9cfc4" stroke="#7a8077"/>
+<text x="656.3" y="583.3" fill="#22252c" font-size="15" font-weight="800" text-anchor="middle" letter-spacing=".5">nice!view</text>
+<text x="656.3" y="598.3" fill="#4b5059" font-size="9.5" font-weight="600" text-anchor="middle">optional · SPI1</text>
+<text x="656.3" y="634.1" fill="#f472b6" font-size="10.5" font-weight="600" text-anchor="middle">MOSI·D6   SCK·D0   CS·D1</text>
 <polyline points="143.9,180.9 121.9,257.6 100.0,334.3" fill="none" stroke="#8b93a7" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round" opacity=".7"/>
 <polyline points="220.6,202.9 198.7,279.6 176.7,356.3" fill="none" stroke="#8b93a7" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round" opacity=".7"/>
 <polyline points="302.9,205.7 280.9,282.4 258.9,359.1" fill="none" stroke="#8b93a7" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round" opacity=".7"/>

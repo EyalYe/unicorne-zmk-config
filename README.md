@@ -5,7 +5,8 @@ driven by a single **nice!nano v2**.
 
 ![Unicorne matrix and wiring](docs/unicorne-matrix.svg)
 
-The CAD source is `cad/unicorne-choc-42-plate.step` (top case, bottom plate, trackpad mount).
+The CAD source is `cad/unicorne-choc-42-plate.step`. It has the top case, the bottom plate, and two
+trackpad mounts: `track_pad_pad` (plain) and `track_pad_pad_nice_view` (adds a window for an optional nice!view).
 Key positions, angles, the physical layout and the diagram above all come from it.
 
 - Shield: `unicorne` (`boards/shields/unicorne`)
@@ -70,7 +71,8 @@ Each half has its own 3 row wires. The 7 column wires are shared by both halves.
 
 ## nice!view (optional)
 
-Flash `unicorne-nice_view-nice_nano_v2.uf2` (build shield `unicorne nice_view`) if a nice!view is fitted.
+Print the `track_pad_pad_nice_view` mount and flash `unicorne-nice_view-nice_nano_v2.uf2`
+(build shield `unicorne nice_view`) if a nice!view is fitted.
 The plain `unicorne` firmware leaves these pins unused.
 
 | nice!view | nice!nano  | GPIO  |
