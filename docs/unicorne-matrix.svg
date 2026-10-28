@@ -25,7 +25,7 @@
 <rect x="583.1" y="552.4" width="146.4" height="59.6" rx="4" fill="#c9cfc4" stroke="#7a8077"/>
 <text x="656.3" y="583.3" fill="#22252c" font-size="15" font-weight="800" text-anchor="middle" letter-spacing=".5">nice!view</text>
 <text x="656.3" y="598.3" fill="#4b5059" font-size="9.5" font-weight="600" text-anchor="middle">optional · SPI1</text>
-<text x="656.3" y="634.1" fill="#f472b6" font-size="10.5" font-weight="600" text-anchor="middle">MOSI·D6   SCK·D0   CS·D1</text>
+<text x="656.3" y="634.1" fill="#f472b6" font-size="10.5" font-weight="600" text-anchor="middle">SI·D6   SCK·D0   SCS·D1</text>
 <polyline points="143.9,180.9 121.9,257.6 100.0,334.3" fill="none" stroke="#8b93a7" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round" opacity=".7"/>
 <polyline points="220.6,202.9 198.7,279.6 176.7,356.3" fill="none" stroke="#8b93a7" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round" opacity=".7"/>
 <polyline points="302.9,205.7 280.9,282.4 258.9,359.1" fill="none" stroke="#8b93a7" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round" opacity=".7"/>
@@ -409,8 +409,8 @@
 <line x1="950.5" y1="791" x2="938.5" y2="791" stroke="#f472b6" stroke-width="2" stroke-dasharray=""/>
 <rect x="904.5" y="781" width="34" height="20" rx="5" fill="#222837" stroke="#3a4152"/>
 <text x="921.5" y="795" fill="#e6e9f2" font-size="11" font-weight="700" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">D1</text>
-<rect x="857.5" y="781" width="42.0" height="20" rx="10" fill="#f472b6" fill-opacity="0.16" stroke="#f472b6" stroke-dasharray=""/>
-<text x="878.5" y="795" fill="#f472b6" font-size="11" font-weight="800" text-anchor="middle">nV CS</text>
+<rect x="850.7" y="781" width="48.8" height="20" rx="10" fill="#f472b6" fill-opacity="0.16" stroke="#f472b6" stroke-dasharray=""/>
+<text x="875.1" y="795" fill="#f472b6" font-size="11" font-weight="800" text-anchor="middle">nV SCS</text>
 <circle cx="964.5" cy="817" r="8" fill="#d4a72c" stroke="#8a6a12" stroke-width="1.2"/><circle cx="964.5" cy="817" r="3.2" fill="#0b3d2c"/>
 <text x="979.5" y="820.5" fill="#7fd1ad" font-size="10" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">P0.08</text>
 <line x1="950.5" y1="817" x2="938.5" y2="817" stroke="#f472b6" stroke-width="2" stroke-dasharray=""/>
@@ -463,8 +463,8 @@
 <line x1="950.5" y1="999" x2="938.5" y2="999" stroke="#f472b6" stroke-width="2" stroke-dasharray=""/>
 <rect x="904.5" y="989" width="34" height="20" rx="5" fill="#222837" stroke="#3a4152"/>
 <text x="921.5" y="1003" fill="#e6e9f2" font-size="11" font-weight="700" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">D6</text>
-<rect x="843.9" y="989" width="55.6" height="20" rx="10" fill="#f472b6" fill-opacity="0.16" stroke="#f472b6" stroke-dasharray=""/>
-<text x="871.6999999999999" y="1003" fill="#f472b6" font-size="11" font-weight="800" text-anchor="middle">nV MOSI</text>
+<rect x="857.5" y="989" width="42.0" height="20" rx="10" fill="#f472b6" fill-opacity="0.16" stroke="#f472b6" stroke-dasharray=""/>
+<text x="878.5" y="1003" fill="#f472b6" font-size="11" font-weight="800" text-anchor="middle">nV SI</text>
 <circle cx="964.5" cy="1025" r="8" fill="#d4a72c" stroke="#8a6a12" stroke-width="1.2"/><circle cx="964.5" cy="1025" r="3.2" fill="#0b3d2c"/>
 <text x="979.5" y="1028.5" fill="#7fd1ad" font-size="10" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="start">P0.11</text>
 <line x1="950.5" y1="1025" x2="938.5" y2="1025" stroke="#4b5366" stroke-width="2" stroke-dasharray="4 3"/>

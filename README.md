@@ -77,11 +77,11 @@ The plain `unicorne` firmware leaves these pins unused.
 
 | nice!view | nice!nano  | GPIO  |
 |-----------|------------|-------|
-| MOSI      | D6         | P1.00 |
+| SI        | D6         | P1.00 |
 | SCK       | D0         | P0.08 |
 | VCC       | VCC (3.3V) |       |
 | GND       | GND        |       |
-| CS        | D1         | P0.06 |
+| SCS       | D1         | P0.06 |
 
 The display runs on SPI1, because SPI0 shares its hardware with the trackpad's I2C0.
 The stock nice!view shield expects D15/D16, which the matrix uses, so the overlay remaps it.
