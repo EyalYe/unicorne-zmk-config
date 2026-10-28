@@ -1,0 +1,9 @@
+# ZMK Studio is enabled via the studio-rpc-usb-uart snippet + CONFIG_ZMK_STUDIO.
+include:
+  - board: nice_nano@2.0.0//zmk
+    shield: unicorne
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: unicorne-nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
+    shield: settings_reset

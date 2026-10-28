@@ -1,0 +1,8 @@
+/.west/
+/zmk/
+/zephyr/*
+!/zephyr/module.yml
+/modules/
+/build/
+/firmware/
+/zmk-driver-azoteq-iqs5xx/
