@@ -3,9 +3,15 @@
 A unibody, handwired 42-key choc Corne with an Azoteq TPS43 trackpad in the middle,
 driven by a single **nice!nano v2**.
 
+![Unicorne matrix and wiring](docs/unicorne-matrix.svg)
+
+The CAD source is `cad/unicorne-choc-42-plate.step` (top case, bottom plate, trackpad mount).
+Key positions, angles, the physical layout and the diagram above all come from it.
+
 - Shield: `unicorne` (`boards/shields/unicorne`)
 - Trackpad driver: [AYM1607/zmk-driver-azoteq-iqs5xx](https://github.com/AYM1607/zmk-driver-azoteq-iqs5xx). Upstream ZMK has no IQS5xx driver.
 - ZMK Studio: enabled. Use the USB connection; `&studio_unlock` is on the SYS layer, bottom-left key.
+- Layers: DEF, NUM, SYM, SYS, SCRL, SNYP.
 - Keymap editor: `config/unicorne.json` + `config/unicorne.keymap` work with
   <https://nickcoutsos.github.io/keymap-editor/>. Point it at this repo.
 - GitHub Actions builds on every push. Download the `firmware` artifact from the Actions run.
@@ -63,6 +69,12 @@ Each half has its own 3 row wires. The 7 column wires are shared by both halves.
 | GND   | GND        |       |
 
 D0, D1, D6 and D7 are full-speed pins and are still free.
+
+### Adding a nice!view later
+
+A nice!view needs 3 pins (SCK, MOSI, CS), and D0, D1, D6 and D7 are free. The stock
+`nice_view` shield uses D15/D16, which this matrix already uses. You'll need to remap its
+SPI pins in a pinctrl override, for example SCK=D0 (P0.08), MOSI=D6 (P1.00), CS=D1 (P0.06).
 
 The nice!nano switches VCC off through P0.13 when external power is off (`&ext_power EP_OFF`).
 Keep external power on, or the trackpad loses power.
