@@ -68,16 +68,25 @@ Each half has its own 3 row wires. The 7 column wires are shared by both halves.
 | VDD   | VCC (3.3V) |       |
 | GND   | GND        |       |
 
-D0, D1, D6 and D7 are full-speed pins and are still free.
+## nice!view (optional)
 
-### Adding a nice!view later
+Flash `unicorne-nice_view-nice_nano_v2.uf2` (build shield `unicorne nice_view`) if a nice!view is fitted.
+The plain `unicorne` firmware leaves these pins unused.
 
-A nice!view needs 3 pins (SCK, MOSI, CS), and D0, D1, D6 and D7 are free. The stock
-`nice_view` shield uses D15/D16, which this matrix already uses. You'll need to remap its
-SPI pins in a pinctrl override, for example SCK=D0 (P0.08), MOSI=D6 (P1.00), CS=D1 (P0.06).
+| nice!view | nice!nano  | GPIO  |
+|-----------|------------|-------|
+| MOSI      | D6         | P1.00 |
+| SCK       | D0         | P0.08 |
+| VCC       | VCC (3.3V) |       |
+| GND       | GND        |       |
+| CS        | D1         | P0.06 |
+
+The display runs on SPI1, because SPI0 shares its hardware with the trackpad's I2C0.
+The stock nice!view shield expects D15/D16, which the matrix uses, so the overlay remaps it.
+D7 (P0.11) is the only pin still free.
 
 The nice!nano switches VCC off through P0.13 when external power is off (`&ext_power EP_OFF`).
-Keep external power on, or the trackpad loses power.
+Keep external power on, or the trackpad and nice!view lose power.
 
 On the NUM layer, hold `SCRL` (the G position) to turn trackpad movement into scrolling.
 Hold `SNYP` (the A position) for precise, slow movement. Trackpad gestures:

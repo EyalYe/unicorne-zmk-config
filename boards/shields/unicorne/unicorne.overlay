@@ -125,6 +125,35 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)   RC(5,0) RC(5,1) RC(5,2) RC(5,3
     };
 };
 
+/*
+ * Optional nice!view (build with shield "unicorne nice_view").
+ * SPI1 is used because SPI0 shares its peripheral with the trackpad's I2C0.
+ *   SCK D0 P0.08, MOSI D6 P1.00, CS D1 P0.06, VCC VCC, GND GND
+ */
+&pinctrl {
+    spi1_nice_view_default: spi1_nice_view_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
+                <NRF_PSEL(SPIM_MOSI, 1, 0)>;
+        };
+    };
+    spi1_nice_view_sleep: spi1_nice_view_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
+                <NRF_PSEL(SPIM_MOSI, 1, 0)>;
+            low-power-enable;
+        };
+    };
+};
+
+nice_view_spi: &spi1 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_nice_view_default>;
+    pinctrl-1 = <&spi1_nice_view_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+};
+
 &i2c0 {
     status = "okay";
     compatible = "nordic,nrf-twim";
